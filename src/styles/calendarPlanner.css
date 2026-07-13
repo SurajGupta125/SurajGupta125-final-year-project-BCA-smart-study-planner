@@ -1,0 +1,254 @@
+.cal-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(34, 64, 114, 0.12);
+  padding: 14px 16px;
+}
+
+.cal-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.cal-title {
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.9);
+  font-size: 0.95rem;
+}
+
+.cal-subtitle {
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.6);
+  font-size: 0.85rem;
+}
+
+.cal-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.cal-calendar-wrap {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(34, 50, 92, 0.08);
+  border-radius: 16px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* react-calendar overrides */
+.react-calendar {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+.react-calendar__navigation button {
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  border-radius: 12px;
+  position: relative;
+}
+
+.react-calendar__tile:enabled:hover {
+  background: rgba(70, 130, 220, 0.12);
+}
+
+.react-calendar__tile--now {
+  background: rgba(255, 179, 71, 0.16);
+}
+
+.react-calendar__tile--active {
+  background: rgba(70, 130, 220, 0.18);
+}
+
+.cal-selected {
+  box-shadow: inset 0 0 0 2px rgba(70, 130, 220, 0.55);
+}
+
+.cal-dot {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #4682dc;
+  box-shadow: 0 6px 14px rgba(70, 130, 220, 0.25);
+}
+
+.cal-side {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(34, 50, 92, 0.08);
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.cal-side-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cal-date {
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.9);
+  font-size: 0.95rem;
+}
+
+.cal-count {
+  font-weight: 800;
+  color: rgba(34, 50, 92, 0.6);
+  font-size: 0.8rem;
+}
+
+.cal-form {
+  display: flex;
+  gap: 10px;
+}
+
+.cal-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(34, 50, 92, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+  font-family: inherit;
+  outline: none;
+}
+
+.cal-input:focus {
+  border-color: rgba(70, 130, 220, 0.55);
+  box-shadow: 0 0 0 3px rgba(70, 130, 220, 0.12);
+}
+
+.cal-add-btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(70, 130, 220, 0.95), rgba(54, 112, 204, 0.95));
+  box-shadow: 0 14px 28px rgba(34, 64, 114, 0.14);
+}
+
+.cal-add-btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.cal-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 220px;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.cal-empty {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.55);
+  padding: 10px 2px;
+}
+
+.cal-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(34, 50, 92, 0.08);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.cal-item-text {
+  font-weight: 800;
+  color: rgba(34, 50, 92, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.cal-del-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 50, 92, 0.12);
+  background: rgba(34, 50, 92, 0.05);
+  cursor: pointer;
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.7);
+}
+
+.cal-del-btn:hover {
+  background: rgba(220, 38, 38, 0.08);
+  border-color: rgba(220, 38, 38, 0.22);
+  color: #dc2626;
+}
+
+.cal-foot {
+  margin-top: 10px;
+}
+
+.cal-foot-note {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.55);
+}
+
+@media (max-width: 900px) {
+  .cal-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark mode */
+.theme-dark .cal-card,
+.theme-dark .cal-calendar-wrap,
+.theme-dark .cal-side {
+  background: rgba(40, 44, 52, 0.9);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.theme-dark .cal-title,
+.theme-dark .cal-date,
+.theme-dark .cal-item-text {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.theme-dark .cal-subtitle,
+.theme-dark .cal-count,
+.theme-dark .cal-empty,
+.theme-dark .cal-foot-note {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.theme-dark .cal-input {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.theme-dark .cal-item {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+.theme-dark .react-calendar__tile:enabled:hover {
+  background: rgba(107, 163, 245, 0.16);
+}
+

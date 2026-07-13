@@ -1,0 +1,61 @@
+.insights-card {
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 14px 40px rgba(34, 64, 114, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.insights-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.insights-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgba(34, 50, 92, 0.9);
+}
+
+.insights-subtitle {
+  font-size: 0.85rem;
+  color: rgba(34, 50, 92, 0.65);
+}
+
+.insights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.insights-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+
+.insights-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(70, 130, 220, 0.12);
+  color: #2f5fb0;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.insights-text {
+  color: rgba(34, 50, 92, 0.85);
+}
+

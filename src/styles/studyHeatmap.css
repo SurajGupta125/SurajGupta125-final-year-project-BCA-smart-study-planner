@@ -1,0 +1,124 @@
+.heat-card {
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 14px 40px rgba(34, 64, 114, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heat-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heat-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgba(34, 50, 92, 0.9);
+}
+
+.heat-subtitle {
+  font-size: 0.85rem;
+  color: rgba(34, 50, 92, 0.65);
+}
+
+.heat-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: rgba(34, 50, 92, 0.75);
+}
+
+.heat-legend-label {
+  font-weight: 700;
+}
+
+.heat-legend-scale {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.heat-legend-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.heat-grid {
+  display: flex;
+  gap: 8px;
+}
+
+.heat-row-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: rgba(34, 50, 92, 0.65);
+  padding-top: 2px;
+}
+
+.heat-row-label {
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heat-weeks {
+  display: flex;
+  gap: 3px;
+}
+
+.heat-week-column {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.heat-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: rgba(34, 50, 92, 0.04);
+  border: 1px solid rgba(34, 50, 92, 0.06);
+  box-sizing: border-box;
+}
+
+.heat-level-0 {
+  background: rgba(34, 50, 92, 0.02);
+  border-color: rgba(34, 50, 92, 0.06);
+}
+
+.heat-level-1 {
+  background: rgba(198, 219, 239, 0.9);
+  border-color: rgba(30, 64, 175, 0.25);
+}
+
+.heat-level-2 {
+  background: rgba(158, 202, 225, 0.95);
+  border-color: rgba(30, 64, 175, 0.3);
+}
+
+.heat-level-3 {
+  background: rgba(107, 174, 214, 0.97);
+  border-color: rgba(30, 64, 175, 0.4);
+}
+
+.heat-level-4 {
+  background: rgba(49, 130, 189, 0.98);
+  border-color: rgba(23, 37, 84, 0.7);
+}
+
+@media (max-width: 560px) {
+  .heat-grid {
+    transform: scale(0.95);
+    transform-origin: left top;
+  }
+}
+

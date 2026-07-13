@@ -1,0 +1,117 @@
+.reminder-card {
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 14px 40px rgba(34, 64, 114, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reminder-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reminder-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgba(34, 50, 92, 0.9);
+}
+
+.reminder-subtitle {
+  font-size: 0.85rem;
+  color: rgba(34, 50, 92, 0.65);
+}
+
+.reminder-form {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reminder-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.8);
+}
+
+.reminder-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reminder-time-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 50, 92, 0.16);
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 0.9rem;
+  color: rgba(34, 50, 92, 0.9);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.reminder-time-input:focus {
+  border-color: rgba(70, 130, 220, 0.8);
+  box-shadow: 0 0 0 1px rgba(70, 130, 220, 0.35);
+}
+
+.reminder-btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(180deg, rgba(70, 130, 220, 0.96), rgba(54, 112, 204, 0.96));
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 10px 24px rgba(34, 64, 114, 0.18);
+  transition: transform 0.15s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reminder-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.02);
+  box-shadow: 0 12px 28px rgba(34, 64, 114, 0.22);
+}
+
+.reminder-next {
+  margin-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px;
+  font-size: 0.8rem;
+}
+
+.reminder-next-label {
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.75);
+}
+
+.reminder-next-value {
+  font-weight: 700;
+  color: rgba(70, 130, 220, 0.95);
+}
+
+@media (max-width: 560px) {
+  .reminder-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .reminder-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+

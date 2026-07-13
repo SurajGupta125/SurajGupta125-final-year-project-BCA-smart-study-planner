@@ -1,0 +1,48 @@
+// 🔑 API KEY (yaha apni key paste karo)
+const API_KEY = "AIzaSyDMusxHZuYoAW6KU7QcgAYl1mpaLlSY6No";
+
+const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
+
+const buildQuery = (subject, topic) => {
+  if (!subject) return "";
+
+  if (!topic || topic === "All Topics") {
+    return `${subject} tutorial`;
+  }
+
+  return `${subject} ${topic} tutorial`;
+};
+
+export const fetchYouTubeVideos = async (subject, topic, maxResults = 6) => {
+  const query = buildQuery(subject, topic);
+
+  const url = `${BASE_URL}?part=snippet&q=${encodeURIComponent(
+    query
+  )}&type=video&maxResults=${maxResults}&key=${API_KEY}`;
+
+  const res = await fetch(url);
+  const data = await res.json();
+
+  if (!data.items) {
+    throw new Error("API Error");
+  }
+
+  return data.items.map((item) => ({
+    id: item.id.videoId,
+    title: item.snippet.title,
+    thumbnail: item.snippet.thumbnails.medium.url,
+    channel: item.snippet.channelTitle,
+  }));
+};
+
+// 🔹 fallback (agar API fail ho)
+export const generateMockVideos = (subject, topic, count = 5) => {
+  const query = buildQuery(subject, topic);
+
+  return Array.from({ length: count }).map((_, i) => ({
+    id: `${query}-${i}`,
+    title: `${query} Part ${i + 1}`,
+    thumbnail: "https://via.placeholder.com/300x180",
+    channel: "Demo Channel",
+  }));
+};

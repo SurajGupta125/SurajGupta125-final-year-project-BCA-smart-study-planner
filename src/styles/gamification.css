@@ -1,0 +1,270 @@
+.gp-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(34, 64, 114, 0.12);
+  padding: 14px 16px;
+}
+
+.gp-card--compact {
+  min-height: 0;
+}
+
+.gp-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gp-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gp-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(255, 179, 71, 0.28), rgba(255, 92, 106, 0.12));
+  color: #ff6a3d;
+  font-size: 1.25rem;
+}
+
+.gp-title {
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.9);
+  font-size: 0.95rem;
+}
+
+.gp-subtitle {
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.92);
+  font-size: 1.05rem;
+}
+
+.gp-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  border: 1px solid rgba(34, 50, 92, 0.12);
+}
+
+.gp-badge--beginner {
+  background: rgba(70, 130, 220, 0.12);
+  color: #2f5fb0;
+}
+
+.gp-badge--intermediate {
+  background: rgba(16, 185, 129, 0.16);
+  color: #0f766e;
+}
+
+.gp-badge--advanced {
+  background: rgba(139, 92, 246, 0.16);
+  color: #6d28d9;
+}
+
+.gp-points {
+  margin-top: 12px;
+}
+
+.gp-points-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gp-points-label {
+  font-weight: 800;
+  color: rgba(34, 50, 92, 0.75);
+  font-size: 0.9rem;
+}
+
+.gp-points-value {
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.92);
+  font-size: 1.15rem;
+}
+
+.gp-bar {
+  margin-top: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(34, 50, 92, 0.08);
+  overflow: hidden;
+}
+
+.gp-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffb74d, #42a5f5, #8b5cf6);
+}
+
+.gp-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.gp-foot-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.55);
+}
+
+/* Dark mode support */
+.theme-dark .gp-card {
+  background: rgba(40, 44, 52, 0.9);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.theme-dark .gp-title,
+.theme-dark .gp-subtitle,
+.theme-dark .gp-points-value {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.theme-dark .gp-points-label,
+.theme-dark .gp-foot-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.theme-dark .gp-bar {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Achievements card */
+.ach-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 16px;
+  box-shadow: 0 14px 40px rgba(34, 64, 114, 0.12);
+  padding: 14px 16px;
+}
+
+.ach-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ach-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ach-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.25), rgba(56, 189, 248, 0.16));
+  font-size: 1.4rem;
+}
+
+.ach-title {
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.9);
+  font-size: 0.95rem;
+}
+
+.ach-subtitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.65);
+}
+
+.ach-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  border: 1px solid rgba(34, 50, 92, 0.12);
+}
+
+.ach-badge--beginner {
+  background: rgba(70, 130, 220, 0.12);
+  color: #2f5fb0;
+}
+
+.ach-badge--learner {
+  background: rgba(22, 163, 74, 0.16);
+  color: #166534;
+}
+
+.ach-badge--focus {
+  background: rgba(245, 158, 11, 0.16);
+  color: #92400e;
+}
+
+.ach-badge--pro {
+  background: rgba(139, 92, 246, 0.16);
+  color: #6d28d9;
+}
+
+.ach-points {
+  margin-top: 12px;
+}
+
+.ach-points-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ach-points-label {
+  font-weight: 800;
+  color: rgba(34, 50, 92, 0.75);
+  font-size: 0.9rem;
+}
+
+.ach-points-value {
+  font-weight: 900;
+  color: rgba(34, 50, 92, 0.92);
+  font-size: 1.15rem;
+}
+
+.ach-bar {
+  margin-top: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(34, 50, 92, 0.08);
+  overflow: hidden;
+}
+
+.ach-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #a5b4fc, #38bdf8, #22c55e);
+}
+
+.ach-foot {
+  margin-top: 10px;
+}
+
+.ach-foot-text {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(34, 50, 92, 0.55);
+}
+
